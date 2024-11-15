@@ -1,0 +1,70 @@
+.dinning-capacity {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.capacity-buttons {
+    margin-bottom: 20px;
+}
+
+.capacity-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.capacity-button:hover {
+    background-color: #45a049;
+}
+
+.capacity-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.capacity-table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.capacity-table th,
+.capacity-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.capacity-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.capacity-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.capacity-table tr:hover {
+    background-color: #ddd;
+}
+
+.error {
+    color: #f44336;
+    margin-top: 10px;
+}

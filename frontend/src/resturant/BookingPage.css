@@ -1,0 +1,110 @@
+.booking-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.restaurant-list {
+    list-style: none;
+    padding: 0;
+}
+
+.restaurant-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #4CAF50;
+    margin: 0 0 10px;
+}
+
+.dining-options {
+    margin-top: 10px;
+}
+
+.booking-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.booking-button:hover {
+    background-color: #45a049;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.booking-form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.booking-form input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit-button, .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #d32f2f;
+}

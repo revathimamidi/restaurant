@@ -1,0 +1,88 @@
+.dishes-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-button, .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover, .submit-button:hover {
+    background-color: #45a049;
+}
+
+.dish-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.dish-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dish-form input, .dish-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dishes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.dishes-category {
+    width: 45%;
+}
+
+.dish-category {
+    margin-bottom: 15px;
+}
+
+.dish-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dish-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
