@@ -184,12 +184,13 @@ function Dishes() {
                                         {groupedDishes[type][category].map(dish => (
                                             <div className="dish-card" key={dish.id}>
                                                 <img src={dish.image_url} alt={dish.name} className="dish-image" />
+
                                                 <h5>{dish.name}</h5>
                                                 <p>Description: {dish.description}</p>
                                                 <p>Price: ${dish.price}</p>
                                                 <p>Quantity: {dish.quantity}</p>
                                                 <p>Available In: {dish.available_in}</p>
-                                                <p>Restaurant ID: {dish.restaurant_id}</p>
+                                                {/* <p>Restaurant ID: {dish.restaurant_id}</p> */}
                                             </div>
                                         ))}
                                     </div>

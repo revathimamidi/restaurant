@@ -86,3 +86,13 @@ h1, h2, h3, h4, h5 {
     font-size: 16px;
     color: #333;
 }
+
+
+.dish-image {
+    width: 100%;        /* Ensure it fills the card width */
+    height: 200px;      /* Fixed height for the image */
+    object-fit: cover;  /* Maintains aspect ratio while cropping the image if necessary */
+    border-radius: 8px; /* Optional: rounded corners for a smoother look */
+    margin-bottom: 10px; /* Optional: space below the image */
+  }
+  

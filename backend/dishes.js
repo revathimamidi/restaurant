@@ -1,8 +1,6 @@
 import { Router } from 'express';
 const router = Router();
 
-
-
 router.get('/getdishes', (req, res) => {
     const sql = 'SELECT * FROM dishes';
 
@@ -19,11 +17,16 @@ router.get('/getdishes', (req, res) => {
         }
     });
 });
-router.post('/postdishes', (req, res) => {
-    const { item_category, type, name, description, price, quantity, available_in, restaurant_id } = req.body;
 
-    const sql = 'INSERT INTO dishes (item_category, type, name, description, price, quantity, available_in, restaurant_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
-    const values = [item_category, type, name, description, price, quantity, available_in, restaurant_id];
+router.post('/postdishes', (req, res) => {
+    const { item_category, type, name, description, price, quantity, available_in, restaurant_id, image_url } = req.body;
+
+    const sql = 'INSERT INTO dishes (item_category, type, name, description, price, quantity, available_in, restaurant_id, image_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
+    const values = [item_category, type, name, description, price, quantity, available_in, restaurant_id, image_url];
+
+    if (!req.db) {
+        return res.status(500).json({ error: "Database connection not found" });
+    }
 
     req.db.query(sql, values, (err, result) => {
         if (err) {
@@ -33,6 +36,5 @@ router.post('/postdishes', (req, res) => {
         }
     });
 });
-
 
 export default router;
