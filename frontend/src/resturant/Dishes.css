@@ -1,90 +1,45 @@
-.dishes-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.action-buttons {
-    margin-bottom: 20px;
+.dishes-layout {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.action-button, .submit-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.action-button:hover, .submit-button:hover {
-    background-color: #45a049;
-}
-
-.dish-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-    align-items: start;
-}
-
-.dish-form label {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.dish-form input, .dish-form select {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.dishes-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
 }
 
-.dishes-category {
-    width: 45%;
+.dishes-menu {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
 }
 
-.dish-category {
-    margin-bottom: 15px;
+.menu-item {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-item.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.dishes-content {
+    flex: 3;
 }
 
 .dish-cards {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .dish-card {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.dish-card h5 {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
+    width: 200px;
+    text-align: center;
 }
 
 
@@ -96,3 +51,90 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px; /* Optional: space below the image */
   }
   
+
+  .dishes-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.dish-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: row;
+    width:850px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.dish-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dish-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dish-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dish-veg-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 16px;
+    background: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dish-info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dish-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.dish-price {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 8px;
+}
+
+.dish-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
