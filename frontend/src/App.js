@@ -34,7 +34,7 @@ function App() {
             <div className="app-container">
                 {showMainPage ? (
                     <>
-                        <h1>Welcome to Our Restaurant</h1>
+                        <h1>Welcome to Amigos restaurant</h1>
                         <div className="button-container">
                             <Link to="/dining" className="button" onClick={() => setShowMainPage(false)}>
                                 Dining
